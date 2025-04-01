@@ -17,7 +17,7 @@ export async function POST(req){
 
     const payload = await req.json();
     const body = JSON.stringify(payload);
-    const {data, type} = wh.verify(body, svixHeaders )
+    const {data, type} = wh.verify(body, svixHeaders)
 
     //Prepare user data to save in DB
 
